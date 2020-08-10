@@ -27,6 +27,7 @@ export class MapBoxComponent implements OnInit{
   ngOnInit() {
     this.markers = this.mapService.getMarkers()
     this.initializeMap()
+    console.log('Vamos a ver si carga');
   }
 
   private initializeMap() {

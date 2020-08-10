@@ -9,6 +9,8 @@ import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirePerformanceModule } from '@angular/fire/performance';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { FormsModule } from '@angular/forms'
+import { MapService } from './core/components/public/map.service';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,11 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
     AngularFireDatabaseModule,
     AngularFirePerformanceModule,
     AngularFireAnalyticsModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    MapService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
